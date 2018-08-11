@@ -9,6 +9,11 @@
     "server": "nodemon server/app.js -L --ignore 'src*'",
     "nodemon": "./node_modules/.bin/nodemon"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thuurvdp/Backen-webdevelopement.git"
+  },
+  "author": "Vandeplassche Thuur",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
