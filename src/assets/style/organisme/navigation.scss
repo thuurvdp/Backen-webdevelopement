@@ -1,0 +1,12 @@
+.o-navigation {
+	width: 100%;
+	height: $header-height;
+
+	padding: $spacer-md;
+
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+
+	border-bottom: $border-md;
+}

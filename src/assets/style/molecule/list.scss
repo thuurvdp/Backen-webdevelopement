@@ -1,0 +1,15 @@
+.m-list--detail {
+	margin-top: $spacer-md;
+
+	@include flexBox(row, flex-start, flex-start);
+	text-align: left;
+	flex-wrap: wrap;
+
+	dt {
+		width: 50px;
+	}
+
+	dd {
+		width: calc(100% - 50px);
+	}
+}

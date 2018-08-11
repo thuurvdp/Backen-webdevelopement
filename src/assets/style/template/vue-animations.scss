@@ -1,0 +1,7 @@
+.fade-leave-active {
+	transition: opacity $transition-default;
+}
+
+.fade-leave-to {
+	opacity: 0;
+}

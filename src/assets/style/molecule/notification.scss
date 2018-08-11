@@ -1,0 +1,37 @@
+.m-notification {
+	width: $size--notification-width;
+	min-height: $size--notification-height;
+	padding: $spacer-sm;
+	position: fixed;
+	bottom: $spacer-md;
+	left: calc(100% - #{$size--notification-width});
+
+	@include flexBox(column, center flex-start);
+
+	border-top-left-radius: $border-radius;
+	border-bottom-left-radius: $border-radius;
+	box-shadow: 0 0 8px 0 $grey;
+
+	background: $brand-color--primary;
+
+	animation: notificationSlidIn $transition-default forwards;
+
+	cursor: pointer;
+
+	p{
+		width: 100%;
+		text-align: left;
+		color: $virgin-white;
+	}
+
+	.notification-content {
+		width: 100%;
+		margin-top: $spacer-xs;
+
+		@include flexBox(row);
+	}
+}
+
+@include keyframes(notificationSlidIn) {
+	0% { left: 100% }
+}

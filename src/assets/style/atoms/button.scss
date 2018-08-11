@@ -1,0 +1,56 @@
+.a-default-button {
+	width: $width-xs;
+	height: $height-md;
+
+	border-radius: $border-radius;
+	transition: $transition-fast;
+
+	color: $virgin-white;
+	background: $brand-color--primary;
+
+	cursor: pointer;
+
+	&:hover {
+		outline: none;
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+}
+
+.a-large-button {
+	width: 100%;
+}
+
+.a-close-button {
+	width: $height-sm;
+	height: $height-sm;
+	position: absolute;
+	top: $spacer-sm;
+	left: calc(100% - (#{$spacer-md} + #{$spacer-xs}));
+
+	border: none;
+	cursor: pointer;
+
+	&::before,
+	&::after {
+		content: "";
+		width: 2px;
+		height: 100%;
+		position: absolute;
+		top:0;
+		left: 48%;
+
+		background: $black;
+	}
+
+	&::before {
+		transform: rotate(-45deg);
+		transform-origin: center center;
+	}
+	&::after {
+		transform: rotate(45deg);
+	}
+
+}

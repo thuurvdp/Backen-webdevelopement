@@ -1,0 +1,17 @@
+.a-text-field {
+	width: 100%;
+	@include flexBox(column, flex-start, flex-start);
+
+	input {
+		width: 100%;
+		height: $height-md;
+		padding: 0 $spacer-xs;
+
+		border: $border-md;
+		border-radius: $border-radius;
+
+		&:hover {
+			outline: none;
+		}
+	}
+}

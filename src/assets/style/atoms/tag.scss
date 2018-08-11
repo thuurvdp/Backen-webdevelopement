@@ -1,0 +1,13 @@
+.a-tag {
+	height: $height-sm;
+	padding: 0 $spacer-xs;
+
+	border-radius: $border-radius;
+
+	color: $virgin-white;
+	background: $grey-light;
+
+	&:not(:nth-child(1)) {
+		margin-left: $spacer-xs;
+	}
+}

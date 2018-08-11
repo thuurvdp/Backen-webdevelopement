@@ -1,0 +1,10 @@
+.t-section {
+	width: 100%;
+	margin: 0 auto;
+	padding: $spacer-md;
+
+	@include at($screen-md) {
+		width: $screen-lg;
+		padding: $spacer-md 0;
+	}
+}

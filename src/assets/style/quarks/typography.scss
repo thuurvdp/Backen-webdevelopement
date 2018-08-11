@@ -1,0 +1,49 @@
+%text,
+p,
+a,
+label,
+time,
+button,
+input,
+textarea,
+dd,
+dl {
+	font-size: 1.4rem;
+	line-height: 1.5;
+	font-family: "Source Sans Pro";
+
+	&.bold {
+		font-weight: 800;
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+}
+
+h1,
+h2,
+h3 {
+	color: $black;
+	font-family: "Source Sans Pro";
+
+	&::first-letter {
+		text-transform: uppercase;
+	}
+}
+
+h1 {
+	font-size: calc(2.8rem + (2.8 - 2.4) * ((100vw - #{$screen-sm}) / (62 - 35)));
+}
+h2 {
+	font-size: calc(2.2rem + (2.2 - 2) * ((100vw - #{$screen-sm}) / (62 - 35)));
+}
+h3 {
+	font-size: calc(2rem + (2 - 1.8) * ((100vw - #{$screen-sm}) / (62 - 35)));
+}
+
+.text-sm {
+	@extend %text;
+
+	font-size: 1.2rem;
+}

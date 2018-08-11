@@ -1,0 +1,12 @@
+FROM node:carbon-alpine
+
+WORKDIR /server
+
+COPY package*.json ./
+RUN npm install --quiet
+
+ENV TYPE=docker
+
+CMD [ "./node_modules/.bin/nodemon" ]
+
+EXPOSE 3000

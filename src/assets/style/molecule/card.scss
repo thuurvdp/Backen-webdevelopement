@@ -1,0 +1,75 @@
+.m-card--address {
+	width: 100%;
+	min-height: $size--card-height;
+
+	padding: $spacer-md;
+
+	border-radius: $border-radius;
+	box-shadow: $box-shadow;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+
+	cursor: pointer;
+	transition: $transition-slow;
+
+	&:hover {
+		box-shadow: 0 0 12px 0 $grey-light;
+	}
+}
+
+.m-card-address-info {
+	margin-top: $spacer-sm;
+}
+
+.m-card-comment {
+	width: 100%;
+	padding: $spacer-sm;
+	margin-top: $spacer-md;
+
+	border: $border-md;
+	border-radius: $border-radius;
+
+	@include flexBox(column, flex-start);
+	text-align: left;
+
+	header {
+		width: 100%;
+		@include flexBox(row, space-between);
+		margin-bottom: $spacer-md;
+	}
+	.body{
+		width: 100%;
+	}
+}
+
+.m-card-add-comment {
+	width: 100%;
+	min-height: $size--message-height;
+	margin-top: $spacer-md;
+
+	label, form {
+		width: 100%;
+	}
+
+	form {
+		@include flexBox(column, flex-start, flex-end);
+		text-align: left;
+	}
+
+	textarea {
+		width: 100%;
+		padding: $spacer-xs;
+		margin-bottom: $spacer-sm;
+
+		border: $border-md;
+		border-radius: $border-radius;
+
+		resize: vertical;
+
+		&:hover {
+			outline: none;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.t-list--md {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: $spacer-md;
+
+	@include at($screen-xxs) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@include at($screen-sm) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.t-list-horizontal {
+	@include flexBox(row, flex-start);
+	flex-wrap: wrap;
+}
