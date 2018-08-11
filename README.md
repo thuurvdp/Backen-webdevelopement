@@ -2,6 +2,9 @@
 
 ## Project intro
 
+de repository van dit project kan gevonden worden op 
+[Github](https://github.com/thuurvdp/Backen-webdevelopement.git)
+
 Dit project maakt gebruik van onderstaande frameworks of libraries
 
 * [Express](https://expressjs.com)
